@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: CD Demo Lambda
+Resources: 
+  CDDemoLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: nodejs8.10
+      Handler: connect.handler
+      CodeUri: ./Lambda
+      Timeout: 30
+      Events:
+        ListBooks:
+          Type: Api
+          Properties:
+            Path: /serverless
+            Method: get    
+      Environment:
+        Variables:
+          REGION: ap-southeast-2
