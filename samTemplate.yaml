@@ -8,7 +8,7 @@ Resources:
       Runtime: nodejs8.10
       Handler: connect.handler
       CodeUri: ./Lambda
-      Timeout: 40
+      Timeout: 30
       Events:
         ListBooks:
           Type: Api
