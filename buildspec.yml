@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 8.10
+      nodejs: 8
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket serverlesscicd --output-template-file outputSamTemplate.yaml
 artifacts:
