@@ -7,7 +7,7 @@ Resources:
     Properties:
       Runtime: nodejs8.10
       Handler: connect.handler
-      CodeUri: ./Lambda
+      CodeUri: Lambda
       Timeout: 30
       Events:
         ListBooks:
