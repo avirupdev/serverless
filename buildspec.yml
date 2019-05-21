@@ -4,6 +4,7 @@ phases:
     commands:
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket serverlesscicd --output-template-file outputSamTemplate.yaml
 artifacts:
+  name: build-output
   type: zip
   files:
     - samTemplate.yaml
