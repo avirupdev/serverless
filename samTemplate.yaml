@@ -9,6 +9,7 @@ Resources:
       Handler: connect.handler
       CodeUri: ./Lambda
       Timeout: 30
+      Events:
         ListBooks:
           Type: Api
           Properties:
